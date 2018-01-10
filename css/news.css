@@ -1,0 +1,104 @@
+.img-header {
+	margin-top: 50px;
+}
+
+.company-info {
+	font-size: 2em;
+	border-bottom: 1px solid #E1E1E1;
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+}
+
+.div-img-small>div>p:first-of-type {
+	font-size: 1.2em;
+	padding-top: 20px;
+}
+
+.div-img-small>div>p:last-of-type {
+	/*
+
+	height: 100px;
+	line-height: 25px;
+	word-wrap: break-word;
+	-webkit-line-clamp: 2; 
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	*/
+	font-size: 1em;
+	color: #8C8C8C;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical;
+	/** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 2;
+	/** 显示的行数 **/
+	overflow: hidden;
+	/** 隐藏超出的内容 **/
+}
+
+.div-img-small>div>p {
+	padding-left: 10px;
+}
+
+.div-img-small {
+	/*background-color: #FFFFFF;*/
+}
+
+body {
+	background-color: #FAFAFA;
+}
+
+.div-img-small>div.news-info {
+	margin-bottom: 20px;
+	border-left: 1px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	box-shadow: 1px 1px #E1E1E1;
+}
+
+.news-info>p:first-of-type{
+	white-space:nowrap;
+	;overflow:hidden;
+	text-overflow:ellipsis;
+}
+.new-img:hover {
+	cursor: pointer;
+}
+
+.div-img-small {
+	position: relative;
+}
+
+.img-mask {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+}
+
+.img-mask:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-mask img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+.header-top-logo {
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		background: url(../images/main/icon.png) no-repeat;
+		margin-top: 9px;
+	}

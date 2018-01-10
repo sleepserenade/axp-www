@@ -1,0 +1,74 @@
+.img-header{
+	margin-top: 50px;
+}
+.div-contact{
+	text-align: center;
+}
+.div-contact>div>p:first-of-type{
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+}
+.div-contact>div>p{
+	color:#868686 ;
+	margin: 20px auto;
+	
+}
+.div-contact>div>img{
+	margin: 30px 20px ;
+	display: inline-block;
+}
+.jobs{
+	font-size: 2em;
+	
+}
+.container-grey>div:nth-child(2n+1){
+	background-color: #FAFAFA;
+}
+.col-sm-6>p:first-of-type{
+	font-size: 2em;
+	color: #7A7A7A;
+}
+.col-sm-6>p{
+	color: #7A7A7A;
+}
+.container-grey>div.row{
+	margin: 30px 0 30px 0;
+	padding-bottom: 30px;
+	padding-top:20px ;
+}
+
+.top-div{
+	position: relative;
+}
+.img-join{
+	position: absolute;
+	top:37%;
+	height: 15%;
+	width: 50%;
+	left: 25%;
+}
+.div-contact>div.col-sm-4{
+	padding-left: 10%;
+}
+.container-grey>div.row{
+	padding-left: 8%;
+}
+.company-info{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.container-grey>div.row>div.col-sm-12>img{
+	margin-bottom: 30px;
+}
+.header-top-logo {
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		background: url(../images/main/icon.png) no-repeat;
+		margin-top: 9px;
+	}
+.div-contact P{
+	text-align: left;
+	padding-left: 38%;
+}

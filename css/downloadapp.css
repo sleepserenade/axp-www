@@ -1,0 +1,54 @@
+.strong-down {
+	margin-left: 40%;
+	position: absolute;
+	top: 20px;
+}
+
+.img-sh {
+	width: 70%;
+}
+
+.img-xp {
+	width: 70%;
+}
+
+.img-bj {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.img-line{
+	width: 90%;
+	position: relative;
+	right: -15px;
+	top: -20px;
+}
+
+.div-aixuepaish {
+	margin-top: 15%;
+	margin-left: 5%;
+	position: relative;
+	height: 120px;
+	float: left;
+}
+
+.div-aixuepaixp {
+	position: relative;
+	float: left;
+	height: 120px;
+	margin-left: 5%;
+}
+
+.img-down-sh {
+	width: 50px;
+	position: absolute;
+	top: 23%;
+	margin-left: 8%;
+}
+
+.img-down-xp {
+	width: 50px;
+	position: absolute;
+	top: 23%;
+	margin-left: 8%;
+}

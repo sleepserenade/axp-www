@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>爱学派下载</title>
+	</head>
+
+	<body>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			
+			.test {
+				height: 600px;
+				max-width: 600px;
+				font-size: 40px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			var type = location.search.substring(1);
+			type = type.replace('type=', '');
+
+			function is_weixin() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/MicroMessenger/i) == "micromessenger") {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			var u = navigator.userAgent;
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;
+			var isWeixin = is_weixin();
+			var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+			//			console.log(winHeight);
+
+			function loadHtml() {
+				var div = document.createElement('div');
+				div.id = 'weixin-tip';
+				div.innerHTML = '<p><img src="images/download/live_weixin.png" alt="微信打开"/></p>';
+				document.body.appendChild(div);
+			}
+
+			function loadStyleText(cssText) {
+				var style = document.createElement('style');
+				style.rel = 'stylesheet';
+				style.type = 'text/css';
+				try {
+					style.appendChild(document.createTextNode(cssText));
+				} catch(e) {
+					style.styleSheet.cssText = cssText; //ie9以下
+				}
+				var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+				head.appendChild(style);
+			}
+			var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+			var bodyhtml = '<div class="test">微信5.0后屏蔽了下载功能，请点击右上角的功能菜单，使用浏览器打开。</div>';
+			if(isWeixin) {
+				loadHtml();
+				loadStyleText(cssText);
+				document.getElementsByTagName("head")[0].appendChild(bodyhtml);
+			} else {
+				if(isiOS) {
+					iosCheck(type);
+				}
+				if(isAndroid) {
+					android(type)
+				}
+			}
+
+			function android(type) {
+				if(type == 'xp') {
+					window.location.href = "zdtp://openaixuepaizb";
+					window.setTimeout(function() {
+						window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.zhiduan.crowdclient";
+					}, 2000);
+				} else if(type == 'sh') {
+					window.location.href = "zdtp://openaixuepaizb";
+					window.setTimeout(function() {
+						window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.example.zbclient";
+					}, 2000);
+				}
+
+			};
+
+			function android(type) {
+				if(type == 'xp') {
+					window.location.href = "zdtp://openaixuepaizb";
+					window.setTimeout(function() {
+						window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.zhiduan.crowdclient";
+					}, 2000);
+				} else if(type == 'sh') {
+					window.location.href = "zdtp://openaixuepaizb";
+					window.setTimeout(function() {
+						window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.example.zbclient";
+					}, 2000);
+				}
+
+			};
+
+			function iosCheck(type) {
+				var ifr = document.createElement("iframe");
+				if(type == 'xp') {
+					ifr.src = "aixuepai://";
+					ifr.style.display = "none";
+					document.body.appendChild(ifr);
+					window.setTimeout(function() {
+						document.body.removeChild(ifr);
+						window.location.href = "https://itunes.apple.com/us/app/ai-xue-pai-xiao-pai-ban/id1125896647?mt=8"; /***下载app的地址***/
+					}, 2000)
+				} else if(type == 'sh') {
+					ifr.src = "zhiduan://";
+					ifr.style.display = "none";
+					document.body.appendChild(ifr);
+					window.setTimeout(function() {
+						document.body.removeChild(ifr);
+						window.location.href = "https://itunes.apple.com/us/app/ai-xue-pai-shang-hu-ban/id1086379283?mt=8"; /***下载app的地址***/
+					}, 2000)
+				}
+
+			};
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,46 @@
+#axp-collapse {
+ }
+
+.navbar-top {
+    background-color: #EA3F4F;
+    border: none;
+}
+
+.navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar-right > li > a {
+    color: white !important;
+}
+
+.header-top:hover {
+    border-bottom: 2px solid white;
+    /*border: 1px solid white;*/
+    /*padding-top: 5px;*/
+    /*background-color: #FF7E41 !important;*/
+    /*padding-bottom: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*margin-top: 5px;*/
+    /*border-radius: 5px;*/
+    /*background-color: white !important;*/
+    /*color: black !important;*/
+    /*padding-bottom: 2px;*/
+}
+
+.header-top {
+    margin-bottom: 3px;
+    margin-top: 10px;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    /*border: 1px solid white;*/
+    margin-left: 15px;
+
+    /*animate-duration: 2s;    //动画持续时间
+    animate-delay: 1s;    //动画延迟时间
+    animate-iteration-count: 2;    //动画执行次数*/
+}
+
+.onborder {
+    border-bottom: 2px solid white;
+}
